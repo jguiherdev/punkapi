@@ -1,0 +1,37 @@
+.beer-properties-container {
+    background-color: #e2e2e2;
+    padding: 20px;
+    border-radius: 10px; 
+    margin-left: 3em;
+    height: 540.4px;
+    margin-bottom: 3em;
+}
+
+.beer-ingredients{}
+
+.beer-properties {
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-properties h2, .beer-properties h3 {
+    margin-bottom: 2px;
+}
+
+.beer-properties p {
+    margin-bottom: 2px;
+}
+
+/* Para tablets y dispositivos con pantallas más grandes */
+@media (min-width: 768px) {
+    .beer-properties-container {
+        padding: 30px;
+    }
+}
+
+/* Para pantallas de escritorio */
+@media (min-width: 1024px) {
+    .beer-properties-container {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,142 @@
+.beer-details-container{
+    margin-top: -4em;
+    display: flex;
+    flex-direction: row;
+    height: 693.45;
+}
+
+.beer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.back-button {
+    align-self: flex-start;
+    margin-bottom: 40px;
+    margin-left: 1em;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -2.5em;
+}
+
+.beer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10em;
+}
+
+.beer-header-container {
+    width: 150px;
+    height: 583.45px;
+    margin-bottom: 10px;
+}
+
+.beer-header img {
+    width: 150px;
+    height: 583.45px;
+    margin-bottom: 10px;
+}
+
+.beer-data{
+    margin-left: 3em;
+}
+
+.toggle-details {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.accordion {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.description-container {
+    margin-top: 2em;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: #e2e2e2; /* Suponiendo que el fondo es negro basado en tu imagen */
+    margin-bottom: 1em;
+}
+
+.description-container h2 {
+    color: rgb(51, 51, 51); /* Suponiendo que el texto es blanco basado en tu imagen */
+    margin-bottom: 10px;
+}
+
+.description{
+    margin-right: 1em;
+}
+
+.description-content {
+    overflow-y: auto;
+    height: 300px;
+    text-align: justify;
+
+}
+
+.description-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.description-content::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+}
+
+.description-content::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+.description-content p {
+    color: rgb(54, 54, 54);
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .beer-details-container {
+        margin-top: 1em; 
+    }
+    .beer-details {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .beer-header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .beer-header img {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    .toggle-details {
+        margin-top: 0;
+        align-self: flex-start;
+    }
+
+    .description-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .description-content {
+        height: 150px; /* Ajusta el alto para dispositivos más pequeños */
+    }
+
+}
