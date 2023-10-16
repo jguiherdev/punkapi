@@ -82,7 +82,7 @@ npm run dev
 
 5. **Visit the application**
 
-Once the server starts, you can view the app at [http://localhost:3000](http://localhost:3000).
+Once the server starts, you can view the app at [http://localhost:5173](http://localhost:5173).
 
 
 
