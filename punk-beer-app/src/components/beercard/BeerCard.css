@@ -1,5 +1,3 @@
-/*BeerCard.css*/
-
 .beer-card {
     background-color: #f7f7f7;
     padding: 20px;
@@ -11,29 +9,28 @@
     gap: 20px;
     transition: transform 0.3s;
     overflow: hidden;
-    max-width: 300px;  /* Establece un ancho máximo para la tarjeta */
+    max-width: 300px;  
 }
 
 .beer-card:hover {
     transform: scale(1.05);
 }
 
-
 .beer-image-container {
-    width: 100px; /* Estandariza el tamaño de la imagen */
+    width: 100px; 
     height: 100px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;  /* Hace que la imagen tenga bordes redondeados */
+    border-radius: 10px; 
 }
 
 .beer-image {
     margin-top: 1.5em;
     width: 100%; 
     height: 100%;
-    object-fit: contain; /* Esto asegura que la imagen se ajuste y se muestre por completo */
+    object-fit: contain; 
     display: block;
 }
 
@@ -41,15 +38,16 @@
     margin: 10px 0;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 .beer-tagline {
     margin: 0;
     font-size: 14px;
     color: #777;
+    text-align: center;
 }
 
-/* Estilos para pantallas pequeñas (mobile-first) */
 @media only screen and (max-width: 600px) {
     .beer-card {
         gap: 10px;

@@ -1,58 +1,78 @@
-.beer-details-container{
-    margin-top: -4em;
+.beer-details-main-container {
     display: flex;
-    flex-direction: row;
-    height: 693.45;
+    margin-top: 4em;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 6em;
 }
 
-.beer-details {
+.navigation-buttons {
+    margin-top: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    position: absolute;
+    width: 100%;
+    padding: 0 40px;
 }
 
 .back-button {
-    align-self: flex-start;
-    margin-bottom: 40px;
-    margin-left: 1em;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: -2.5em;
+}
+
+.favorite-button {
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 3em;
+}
+
+.beer-details-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5em;
 }
 
 .beer-header {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 400px;
+    margin-right: 5em;
+    margin-bottom: 2em;
+}
+
+.name-tagline {
+    margin-top: 2px;
+}
+
+.beer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2em;
+}
+
+.main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 10em;
+    max-width: 600px;
+    justify-content: center;
+    justify-items: center;
 }
 
-.beer-header-container {
+img {
+    justify-self: center;
     width: 150px;
-    height: 583.45px;
-    margin-bottom: 10px;
-}
-
-.beer-header img {
-    width: 150px;
-    height: 583.45px;
-    margin-bottom: 10px;
-}
-
-.beer-data{
-    margin-left: 3em;
-}
-
-.toggle-details {
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.accordion {
-    width: 100%;
-    margin-top: 20px;
+    height: 590.46px;
 }
 
 .description-container {
@@ -64,24 +84,25 @@
     padding: 20px;
     overflow: hidden;
     position: relative;
-    background-color: #e2e2e2; /* Suponiendo que el fondo es negro basado en tu imagen */
+    background-color: #e2e2e2;
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 .description-container h2 {
-    color: rgb(51, 51, 51); /* Suponiendo que el texto es blanco basado en tu imagen */
+    color: rgb(51, 51, 51);
     margin-bottom: 10px;
 }
 
-.description{
+.description {
     margin-right: 1em;
+    text-align: justify;
 }
 
 .description-content {
     overflow-y: auto;
-    height: 300px;
+    height: 200px;
     text-align: justify;
-
 }
 
 .description-content::-webkit-scrollbar {
@@ -100,43 +121,79 @@
 
 .description-content p {
     color: rgb(54, 54, 54);
-
+    margin-right: 1em;
 }
 
-
-@media screen and (min-width: 768px) {
-    .beer-details-container {
-        margin-top: 1em; 
+@media screen and (max-width: 600px) {
+    .navigation-buttons {
+        margin-top: 2em;
     }
-    .beer-details {
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 800px;
-        margin: 0 auto;
+
+    .favorite-button {
+        margin-top: 0.1em;
+        margin-left: 4em;
+        padding: 2px;
     }
 
     .beer-header {
-        flex-direction: row;
-        align-items: flex-start;
+        margin-left: 5em;
+        margin-bottom: 0em;
+    }
+
+    .beer-details-container {
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: -3.5em;
     }
 
     .beer-header img {
-        width: 150px;
-        margin-right: 20px;
+        width: 70px;
+        height: 250.46px;
     }
 
-    .toggle-details {
-        margin-top: 0;
-        align-self: flex-start;
+    .beer-image {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .beer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .description-container {
-        max-width: 100%;
-        padding: 10px;
+        max-height: 190px;
+        width: 300px;
+        margin-left: 42px;
     }
 
     .description-content {
-        height: 150px; /* Ajusta el alto para dispositivos más pequeños */
+        max-height: 140px;
+        margin-right: 6px;
     }
 
+    .food-pairing {
+        text-align: justify;
+        margin-bottom: 1em;
+        max-width: 300px;
+        align-self: center;
+    }
+
+    .food-pairing h2 {
+        text-align: center;
+    }
+
+    .brewers-tips {
+        text-align: justify;
+        margin-bottom: 1em;
+        max-width: 300px;
+        align-self: center;
+    }
+
+    .brewers-tips h2 {
+        text-align: center;
+    }
 }
