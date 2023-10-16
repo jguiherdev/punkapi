@@ -2,9 +2,9 @@
 
 Welcome to the "Punk Beer App" repository! This app is built with React and powered by Vite.
 
-Primary Requirements:
+# The requirements for this test were as follows:
 
-**The requirements for this test were as follows:**
+**Primary Requirements:**
 
 ✔️ 1. JavaScript must be used, and you can use any framework or library you see fit. The use of React is an asset.
 
@@ -29,7 +29,7 @@ architecture/structure of the application, the choice of framework/library used,
 
 ✔️ 9. The code and documentation must be in English.
 
-Optional Features:
+**Optional Features:**
 
 ✔️ 10. Functionality for the user to bookmark and filter by favorites. As no database is used, browser localStorage can be used.
 
