@@ -80,7 +80,7 @@ PunkApiService.jsx: Handles calls to the Punk API.
 git clone https://github.com/jguiherdev/punkapi.git
 
 
-2. **Navigate to the directory punk-beer-app**
+2. **Navigate to the directory /punk-beer-app**
 
 ... cd punk-beer-app
 
