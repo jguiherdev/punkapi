@@ -37,8 +37,28 @@ architecture/structure of the application, the choice of framework/library used,
 
 ❌ 12. A button that can switch from card view to table view and vice versa.
 
+# Basic structure of Punk Beer Api:
 
-**Here below you can also see some images of the different views of the app:**
+**components: Contains the React components of the application:**
+
+beercard: A component to display a card with beer information.
+
+beerdetails: A component that shows additional details of a specific beer.
+
+beerlist: A component that lists several beers.
+
+beerproperties: A component that displays the properties of a beer, such as its ABV, IBU, etc.
+
+footer: Footer component of the application.
+
+header: Header component of the application.
+
+**services: Contains services or functions related to business logic or API calls**
+
+PunkApiService.jsx: Handles calls to the Punk API.
+
+
+# Here below you can also see some images of the different views of the app:
 
 ![image](https://github.com/jguiherdev/punkapi/assets/118314916/6531e6a3-89bf-4501-860c-7aa4df72cbc1)
 
